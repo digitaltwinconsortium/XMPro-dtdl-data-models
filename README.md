@@ -2,9 +2,14 @@
 
 This repository includes DTDL models for wind farms and wind turbines based on the [IEC 61400-25](https://webstore.iec.ch/publication/22813) standard. These models can be used to create digital twin instances in [Azure Digital Twins](https://azure.microsoft.com/services/digital-twins/) directly or through the [XMPro](https://xmpro.com) No Code Application Development Platform.  
 
-<img src="/images/DTDL-Wind-Turbine-Diagram.png" style="zoom:55%;" />
+<p align="center">
+  <img alt="DTDL - Wind - Turbine - Diagram" src="Images/DTDL-Wind-Turbine-Diagram.png" style="zoom:55%;" />
+</p>
 
-![](/images/Wind-Turbine - Red Status.png)
+<p align="center">
+  <img alt="Wind-Turbine - Red Status - XMPro" src="Images/Wind-Turbine - Red Status.png" />
+</p>
+
 
 <center>Example wind turbine Digital Twin in XMPro using the open-source DTDL models and data from Azure Digital Twins
 
