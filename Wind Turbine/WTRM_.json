@@ -1,0 +1,304 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WTUR;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Transmission information",
+    "description": "-",
+    "contents": [
+  {
+    "@type": "Telemetry",
+    "name": "BrkOpSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Brk",
+                "displayName": "Shaft has stopped by brake",
+                "enumValue": 1
+            },
+            {
+                "name": "Rdy",
+                "displayName": "Brake is ready",
+                "enumValue": 2
+              },
+              {
+                  "name": "OvHt",
+                  "displayName": "Brake disk is overheated",
+                  "enumValue": 3
+                },
+                {
+                  "name": "Flt",
+                  "displayName": "Brake system is faulty",
+                  "enumValue": 4
+                } ] } },
+                {
+                    "@type": "Property",
+                    "name": "LuSt",
+                    "schema": {
+                        "@type": "Enum",
+                        "valueSchema": "integer",
+                        "enumValues": [
+                            {
+                                "name": "On",
+                                "displayName": "System is operating",
+                                "enumValue": 1
+                            },
+                            {
+                                "name": "Off",
+                                "displayName": "System is not operating",
+                                "enumValue": 2
+                              },
+                              {
+                                  "name": "Flt",
+                                  "displayName": "System is in fauty condition",
+                                  "enumValue": 3
+                                } ] } },
+                                {
+                                    "@type": "Property",
+                                    "name": "FilSt",
+                                    "schema": {
+                                        "@type": "Enum",
+                                        "valueSchema": "integer",
+                                        "enumValues": [
+                                            {
+                                                "name": "On",
+                                                "displayName": "System is operating",
+                                                "enumValue": 1
+                                            },
+                                            {
+                                                "name": "Off",
+                                                "displayName": "System is not operating",
+                                                "enumValue": 2
+                                              },
+                                              {
+                                                  "name": "Flt",
+                                                  "displayName": "System is in fauty condition",
+                                                  "enumValue": 3
+                                                } ] } },
+                                                {
+                                                    "@type": "Property",
+                                                    "name": "ClSt",
+                                                    "schema": {
+                                                        "@type": "Enum",
+                                                        "valueSchema": "integer",
+                                                        "enumValues": [
+                                                            {
+                                                                "name": "Cl",
+                                                                "displayName": "System is cooling",
+                                                                "enumValue": 1
+                                                            },
+                                                            {
+                                                                "name": "Stdby",
+                                                                "displayName": "System is in standby mode",
+                                                                "enumValue": 2
+                                                              },
+                                                              {
+                                                                  "name": "Off",
+                                                                  "displayName": "System is off",
+                                                                  "enumValue": 3
+                                                                },
+                                                                {
+                                                                    "name": "Flt",
+                                                                    "displayName": "System is faulty",
+                                                                    "enumValue": 4
+                                                                  } ] } },
+                                                                  {
+                                                                    "@type": "Property",
+                                                                    "name": "HtSt",
+                                                                    "schema": {
+                                                                        "@type": "Enum",
+                                                                        "valueSchema": "integer",
+                                                                        "enumValues": [
+                                                                            {
+                                                                                "name": "On",
+                                                                                "displayName": "System is operating",
+                                                                                "enumValue": 1
+                                                                            },
+                                                                            {
+                                                                                "name": "Off",
+                                                                                "displayName": "System is not operating",
+                                                                                "enumValue": 2
+                                                                              },
+                                                                              {
+                                                                                  "name": "Flt",
+                                                                                  "displayName": "System is in faulty condition",
+                                                                                  "enumValue": 3
+                                                                                } ] } },
+                                                                                {
+                                                                                    "@type": "Property",
+                                                                                    "name": "OiLevSt",
+                                                                                    "schema": {
+                                                                                        "@type": "Enum",
+                                                                                        "valueSchema": "integer",
+                                                                                        "enumValues": [
+                                                                                            {
+                                                                                                "name": "HiHi",
+                                                                                                "displayName": "Value above high-high level",
+                                                                                                "enumValue": 1
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "Hi",
+                                                                                                "displayName": "Value above high level",
+                                                                                                "enumValue": 2
+                                                                                              },
+                                                                                              {
+                                                                                                  "name": "Nor",
+                                                                                                  "displayName": "Value in normal range",
+                                                                                                  "enumValue": 3
+                                                                                                },
+                                                                                                {
+                                                                                                    "name": "Lo",
+                                                                                                    "displayName": "Value below low level",
+                                                                                                    "enumValue": 4
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "name": "LoLo",
+                                                                                                    "displayName": "Value below low-low level",
+                                                                                                    "enumValue": 5
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "name": "OutRng",
+                                                                                                    "displayName": "Value out of range",
+                                                                                                    "enumValue": 6
+                                                                                                  } ] } },
+                                                                                                  {
+                                                                                                    "@type": "Property",
+                                                                                                    "name": "OfFilSt",
+                                                                                                    "schema": {
+                                                                                                        "@type": "Enum",
+                                                                                                        "valueSchema": "integer",
+                                                                                                        "enumValues": [
+                                                                                                            {
+                                                                                                                "name": "HiHi",
+                                                                                                                "displayName": "Value above high-high level",
+                                                                                                                "enumValue": 1
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "name": "Hi",
+                                                                                                                "displayName": "Value above high level",
+                                                                                                                "enumValue": 2
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "name": "Nor",
+                                                                                                                  "displayName": "Value in normal range",
+                                                                                                                  "enumValue": 3
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "name": "Lo",
+                                                                                                                    "displayName": "Value below low level",
+                                                                                                                    "enumValue": 4
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                    "name": "LoLo",
+                                                                                                                    "displayName": "Value below low-low level",
+                                                                                                                    "enumValue": 5
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                    "name": "OutRng",
+                                                                                                                    "displayName": "Value out of range",
+                                                                                                                    "enumValue": 6
+                                                                                                                  } ] } },
+                                                                                                                  {
+                                                                                                                    "@type": "Property",
+                                                                                                                    "name": "InlFilSt",
+                                                                                                                    "schema": {
+                                                                                                                        "@type": "Enum",
+                                                                                                                        "valueSchema": "integer",
+                                                                                                                        "enumValues": [
+                                                                                                                            {
+                                                                                                                                "name": "HiHi",
+                                                                                                                                "displayName": "Value above high-high level",
+                                                                                                                                "enumValue": 1
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "name": "Hi",
+                                                                                                                                "displayName": "Value above high level",
+                                                                                                                                "enumValue": 2
+                                                                                                                              },
+                                                                                                                              {
+                                                                                                                                  "name": "Nor",
+                                                                                                                                  "displayName": "Value in normal range",
+                                                                                                                                  "enumValue": 3
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "name": "Lo",
+                                                                                                                                    "displayName": "Value below low level",
+                                                                                                                                    "enumValue": 4
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "name": "LoLo",
+                                                                                                                                    "displayName": "Value below low-low level",
+                                                                                                                                    "enumValue": 5
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "name": "OutRng",
+                                                                                                                                    "displayName": "Value out of range",
+                                                                                                                                    "enumValue": 6
+                                                                                                                                  } ] } },
+                                                                                                                                  {
+                                                                                                                                    "@type": ["Telemetry", "Temperature"],
+                                                                                                                                    "name": "ShfBrgTmp",
+                                                                                                                                    "schema": "double",
+                                                                                                                                    "unit": "degreeCelsius"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "@type": ["Telemetry", "Temperature"],
+                                                                                                                                    "name": "GbxOilTmp",
+                                                                                                                                    "schema": "double",
+                                                                                                                                    "unit": "degreeCelsius"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "@type": ["Telemetry", "Temperature"],
+                                                                                                                                    "name": "ShftBrkTmp",
+                                                                                                                                    "schema": "double",
+                                                                                                                                    "unit": "degreeCelsius"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "@type": "Telemetry",
+                                                                                                                                    "name": "GbxVbr",
+                                                                                                                                    "schema": "double"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "@type": "Telemetry",
+                                                                                                                                    "name": "GsLev",
+                                                                                                                                    "schema": "double"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "@type": ["Telemetry", "Volume"],
+                                                                                                                                    "name": "GbxOilLev",
+                                                                                                                                    "schema": "double",
+                                                                                                                                    "unit": "cubicMetre"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "@type": ["Telemetry", "Pressure"],
+                                                                                                                                    "name": "GbxOilPres",
+                                                                                                                                    "schema": "double",
+                                                                                                                                    "unit": "kilopascal"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "@type": "Telemetry",
+                                                                                                                                    "name": "BrkHyPres",
+                                                                                                                                    "schema": "double"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "@type": "Telemetry",
+                                                                                                                                    "name": "OfFil",
+                                                                                                                                    "schema": "double"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                    "@type": "Telemetry",
+                                                                                                                                    "name": "InlFil",
+                                                                                                                                    "schema": "double"
+                                                                                                                                  },
+                                                                                                                                  {"@type": "Relationship",
+                                                                                                                                    "name": "isPartOf",
+                                                                                                                                    "target": "dtmi:com:xmpro:WindFarm:WTUR;1",
+                                                                                                                                    "maxMultiplicity": 1
+                                                                                                                                } ] } 
+                                                                              
+                                                                              
+                                
+                   

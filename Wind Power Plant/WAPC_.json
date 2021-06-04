@@ -1,0 +1,182 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WAPC;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Active power control information",
+    "description": "-",
+    "contents": [
+        {
+    "@type": "Property",
+    "name": "OpTurNum",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "CutHiTurNum",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "CutLoTurNum",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "WLimEna",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Enabled",
+                "displayName": "Power limitation mode enabled",
+                "enumValue": 1
+            },
+            {
+                "name": "Disabled",
+                "displayName": "Power limitation mode disabled",
+                "enumValue": 2
+              } ] } },
+              {
+                "@type": "Property",
+                "name": "VAEna",
+                "schema": {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "Enabled",
+                            "displayName": "Power Control Mode Enabled",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "Disabled",
+                            "displayName": "Power Control Mode Disabled",
+                            "enumValue": 2
+                          } ] } },
+                          {
+                            "@type": "Property",
+                            "name": "GraEna",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "integer",
+                                "enumValues": [
+                                    {
+                                        "name": "Enabled",
+                                        "displayName": "Gradient function enabled",
+                                        "enumValue": 1
+                                    },
+                                    {
+                                        "name": "Disabled",
+                                        "displayName": "Gradient function disabled",
+                                        "enumValue": 2
+                                      } ] } },
+                                      {
+                                        "@type": "Property",
+                                        "name": "DelEna",
+                                        "schema": {
+                                            "@type": "Enum",
+                                            "valueSchema": "integer",
+                                            "enumValues": [
+                                                {
+                                                    "name": "Enabled",
+                                                    "displayName": "Delta function enabled",
+                                                    "enumValue": 1
+                                                },
+                                                {
+                                                    "name": "Disabled",
+                                                    "displayName": "Delta function disabled",
+                                                    "enumValue": 2
+                                                  } ] } },
+                                                  {
+                                                    "@type": ["Telemetry", "Power"],
+                                                    "name": "WCap",
+                                                    "schema": "double",
+                                                    "unit" : "megawatt"
+                                                  },
+                                                  {
+                                                    "@type": ["Telemetry", "Power"],
+                                                    "name": "W",
+                                                    "schema": "double",
+                                                    "unit" : "megawatt"
+                                                  },
+                                                  {
+                                                    "@type": "Telemetry",
+                                                    "name": "VA",
+                                                    "schema": "double" 
+                                                  },
+                                                  {
+                                                    "@type": "Telemetry",
+                                                    "name": "Gra",
+                                                    "schema": "double"
+                                                  },
+                                                  {
+                                                    "@type": ["Telemetry","Power"],
+                                                    "name": "WDel",
+                                                    "schema": "double",
+                                                    "unit": "megawatt"
+                                                  },
+                                                  {
+                                                    "@type": ["Telemetry", "Power"],
+                                                    "name": "WMinCap",
+                                                    "schema": "double",
+                                                    "unit":"megawatt"
+                                                  },
+                                                  {
+                                                    "@type": "Command",
+                                                    "name": "WAct"
+                                                   
+                                                  },
+                                                  {
+                                                    "@type": "Command",
+                                                    "name": "VAAct"
+                                                   
+                                                  },
+                                                  {
+                                                    "@type": "Command",
+                                                    "name": "GraAct"
+                                                    
+                                                  },
+                                                  {
+                                                    "@type": "Command",
+                                                    "name": "DelAct"
+                                                    
+                                                  },
+                                                  {
+                                                    "@type": ["Property", "Power"],
+                                                    "name": "WSpt",
+                                                    "schema": "double",
+                                                    "unit" : "megawatt"
+                                                  },
+                                                  {
+                                                    "@type": "Property",
+                                                    "name": "VASpt",
+                                                    "schema": "double"
+                                                  },
+                                                  {
+                                                    "@type": "Property",
+                                                    "name": "WUpGraSpt",
+                                                    "schema": "double"
+                                                  },
+                                                  {
+                                                    "@type": "Property",
+                                                    "name": "WDnGraSpt",
+                                                    "schema": "double"
+                                                  },
+                                                  {
+                                                    "@type": "Property",
+                                                    "name": "DelSpt",
+                                                    "schema": "double"
+                                                  },
+                                                  {"@type": "Relationship",
+                                                    "name": "isPartOf",
+                                                    "target":"dtmi:com:xmpro:WindFarm:WPPD;1",
+                                                    "maxMultiplicity": 1
+                                                } ] } 
+              
+              
+              
+              
+              

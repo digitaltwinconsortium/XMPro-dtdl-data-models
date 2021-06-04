@@ -1,0 +1,69 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WPPD;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Wind power plant general information",
+    "description": "-",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "StrCnt",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "StopCnt",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "DevSt",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "Stop",
+                        "displayName": "Device stopped",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Stdby",
+                        "displayName": "Device is in standby",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Str",
+                        "displayName": "Device is starting",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Run",
+                        "displayName": "Device is running",
+                        "enumValue": 4
+                    } ] } },
+                    {
+                        "@type": "Property",
+                        "name": "DevOp",
+                        "schema": {
+                            "@type": "Enum",
+                            "valueSchema": "integer",
+                            "enumValues": [
+                                {
+                                    "name": "Str",
+                                    "displayName": "Start",
+                                    "enumValue": 1
+                                },
+                                {
+                                    "name": "Stop",
+                                    "displayName": "Stop",
+                                    "enumValue": 2
+                                } ] } },
+                                {
+                                    "@type": "Relationship",
+                                  "name": "isPartOf",
+                                  "target": "dtmi:com:xmpro:WindFarm:WPPD;1",
+                                  "maxMultiplicity": 1
+                                } ] } 

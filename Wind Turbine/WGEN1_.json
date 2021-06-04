@@ -1,0 +1,157 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WGEN1;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Generator Information",
+    "description": "-",
+    "contents": [
+           {
+    "@type": ["Property", "TimeSpan"],
+    "name": "OpTmsRs",
+    "schema": "double",
+    "unit": "second"
+  },
+  {
+    "@type": "Property",
+    "name": "GnOpSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Op",
+                "displayName": "Generator in operation",
+                "enumValue": 1
+            },
+            {
+                "name": "Run",
+                "displayName": "Generator running",
+                "enumValue": 2
+              },
+              {
+                  "name": "Rdy",
+                  "displayName": "Generator ready",
+                  "enumValue": 3
+                },
+                {
+                    "name": "Flt",
+                    "displayName": "Generator in faulty condition",
+                    "enumValue": 4
+                  } ] } },
+                  {
+                    "@type": "Property",
+                    "name": "ClSt",
+                    "schema": {
+                        "@type": "Enum",
+                        "valueSchema": "integer",
+                        "enumValues": [
+                            {
+                                "name": "Cl",
+                                "displayName": "System is cooling",
+                                "enumValue": 1
+                            },
+                            {
+                                "name": "Stdby",
+                                "displayName": "System is in standby",
+                                "enumValue": 2
+                              },
+                              {
+                                  "name": "Off",
+                                  "displayName": "System is off",
+                                  "enumValue": 3
+                                },
+                                {
+                                    "name": "Flt",
+                                    "displayName": "System is faulty",
+                                    "enumValue": 4
+                                  } ] } },
+                                  {
+                                    "@type": ["Telemetry", "AngularVelocity"],
+                                    "name": "RotSpd",
+                                    "schema": "double",
+                                    "unit": "revolutionPerSecond"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Power"],
+                                    "name": "W",
+                                    "schema": "double",
+                                    "unit": "megawatt"
+                                  },
+                                  {
+                                    "@type": "Telemetry",
+                                    "name": "VAr",
+                                    "schema": "double"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Temperature"],
+                                    "name": "SttTmp",
+                                    "schema": "double",
+                                    "unit": "degreeCelsius"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Temperature"],
+                                    "name": "RotTmp",
+                                    "schema": "double",
+                                    "unit": "degreeCelsius"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Temperature"],
+                                    "name": "InletTmp",
+                                    "schema": "double",
+                                    "unit": "degreeCelsius"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Voltage"],
+                                    "name": "SttPPV",
+                                    "schema": "double",
+                                    "unit": "volt"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Voltage"],
+                                    "name": "SttPNV",
+                                    "schema": "double",
+                                    "unit": "volt"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Current"],
+                                    "name": "SttA",
+                                    "schema": "double",
+                                    "unit": "ampere"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Voltage"],
+                                    "name": "RotPPV",
+                                    "schema": "double",
+                                    "unit": "volt"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Voltage"],
+                                    "name": "RotPNV",
+                                    "schema": "double",
+                                    "unit": "volt"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Current"],
+                                    "name": "RotA",
+                                    "schema": "double",
+                                    "unit": "ampere"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Current"],
+                                    "name": "RotExtDC",
+                                    "schema": "double",
+                                    "unit": "ampere"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Current"],
+                                    "name": "RotExtAC",
+                                    "schema": "double",
+                                    "unit": "ampere"
+                                  },
+                                  {"@type": "Relationship",
+                                    "name": "isPartOf",
+                                    "target": "dtmi:com:xmpro:WindFarm:WTUR;1",
+                                    "maxMultiplicity": 1
+                                } ] }

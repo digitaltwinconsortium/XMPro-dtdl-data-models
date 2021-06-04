@@ -1,0 +1,29 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WREP;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Report information",
+    "description": "-",
+    "contents": [
+        {
+    "@type": "Property",
+    "name": "TurChrRp",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "TurTmRp",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "TurCntRp",
+    "schema": "integer"
+  },
+  {"@type": "Relationship",
+    "name": "isPartOf",
+    "target": "dtmi:com:xmpro:WindFarm:WPPD;1",
+    "maxMultiplicity": 1
+} ] }

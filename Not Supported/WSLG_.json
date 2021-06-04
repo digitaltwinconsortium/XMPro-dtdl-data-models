@@ -1,0 +1,46 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WSLG;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "State log information",
+    "description": "-",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "TurCmdLog",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "TurStLog",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "HiUrgAlm",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "LoUrgAlm",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "TurCntLog",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "TurTmLog",
+            "schema": "integer"
+          },
+          {
+            "@type": "Relationship",
+          "name": "isPartOf",
+          "target": "dtmi:com:xmpro:WindFarm:WPPD;1",
+          "maxMultiplicity": 1
+      } ] }
+       

@@ -1,0 +1,97 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:LPHD;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Physical Device Information",
+    "description": "-",
+    "contents": [
+   {
+        "@type": "Property",
+        "name": "PhyNam",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "PhyHealth",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "BecBlbSt",
+        "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": [
+                {
+                    "name": "Ok",
+                    "displayName": "Ok (green)- no problem, normal operation",
+                    "enumValue": 1
+                },
+                {
+                    "name": "Warning",
+                    "displayName": "Warning (yellow)- minor problems, but in safe operation mode",
+                    "enumValue": 2
+                },
+                {
+                    "name": "Alarm",
+                    "displayName": "Alarm (red)- severe problem, no operation possible",
+                    "enumValue": 3
+                } ] } },
+                {
+                    "@type": "Property",
+                    "name": "OutOv",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "Proxy",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "InOv",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "NumPwrUp",
+                    "schema": "integer"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "WrmStr",
+                    "schema": "integer"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "WacTrg",
+                    "schema": "integer"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "PwrUp",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "PwrDn",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "PwrSupAlm",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "RsStat",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@type": "Relationship",
+                  "name": "isPartOf",
+                  "target": "dtmi:com:xmpro:WindFarm:WPPD;1",
+                  "maxMultiplicity": 1
+                } ] } 

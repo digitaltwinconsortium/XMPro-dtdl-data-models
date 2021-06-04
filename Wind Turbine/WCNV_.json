@@ -1,0 +1,168 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WCNV;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Converter information",
+    "description": "-",
+    "contents": [
+           {
+    "@type": ["Property", "TimeSpan"],
+    "name": "OpTmsRs",
+    "schema": "integer",
+    "unit": "second"
+  },
+  {
+    "@type": "Property",
+    "name": "CnvOpSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Chrg",
+                "displayName": "Converter is currently charging",
+                "enumValue": 1
+            },
+            {
+                "name": "Rdy",
+                "displayName": "Converter is ready",
+                "enumValue": 2
+              },
+              {
+                  "name": "Run",
+                  "displayName": "Converter is running",
+                  "enumValue": 3
+                },
+                {
+                    "name": "Flt",
+                    "displayName": "Converter is faulted",
+                    "enumValue": 4
+                  } ] } },
+                  {
+                    "@type": "Property",
+                    "name": "ClSt",
+                    "schema": {
+                        "@type": "Enum",
+                        "valueSchema": "integer",
+                        "enumValues": [
+                            {
+                                "name": "Cl",
+                                "displayName": "System is cooling",
+                                "enumValue": 1
+                            },
+                            {
+                                "name": "Stdby",
+                                "displayName": "System is in standby mode",
+                                "enumValue": 2
+                              },
+                              {
+                                  "name": "Off",
+                                  "displayName": "System is off",
+                                  "enumValue": 3
+                                },
+                                {
+                                    "name": "Flt",
+                                    "displayName": "System is faulty",
+                                    "enumValue": 4
+                                  } ] } },
+                                  {
+                                    "@type": ["Telemetry", "Frequency"],
+                                    "name": "GnHz",
+                                    "schema": "double",
+                                    "unit": "hertz"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Frequency"],
+                                    "name": "GriHz",
+                                    "schema": "double",
+                                    "unit": "hertz"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Torque"],
+                                    "name": "Torq",
+                                    "schema": "double",
+                                    "unit": "newtonMetre"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Voltage"],
+                                    "name": "GnPPV",
+                                    "schema": "double",
+                                    "unit": "volt"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Voltage"],
+                                    "name": "GnPNV",
+                                    "schema": "double",
+                                    "unit": "volt"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Current"],
+                                    "name": "GnA",
+                                    "schema": "double",
+                                    "unit": "ampere"
+                                  },
+                                  {
+                                    "@type": "Telemetry",
+                                    "name": "GnPF",
+                                    "schema": "double"
+                                  } ,
+                                  {
+                                    "@type": ["Telemetry", "Voltage"],
+                                    "name": "GriPPV",
+                                    "schema": "double",
+                                    "unit": "volt"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Voltage"],
+                                    "name": "GriPNV",
+                                    "schema": "double",
+                                    "unit": "volt"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Current"],
+                                    "name": "GriA",
+                                    "schema": "double",
+                                    "unit": "ampere"
+                                  },
+                                  {
+                                    "@type": "Telemetry",
+                                    "name": "GriPF",
+                                    "schema": "double"
+                                  } ,
+                                  {
+                                    "@type": ["Telemetry", "Temperature"],
+                                    "name": "GnTmp",
+                                    "schema": "double",
+                                    "unit": "degreeCelsius"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Temperature"],
+                                    "name": "DclTmp",
+                                    "schema": "double",
+                                    "unit": "degreeCelsius"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Temperature"],
+                                    "name": "GriTmp",
+                                    "schema": "double",
+                                    "unit": "degreeCelsius"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Voltage"],
+                                    "name": "DcIV",
+                                    "schema": "double",
+                                    "unit": "volt"
+                                  },
+                                  {
+                                    "@type": ["Telemetry", "Current"],
+                                    "name": "DcIA",
+                                    "schema": "double",
+                                    "unit": "ampere"
+                                  },
+                                  {"@type": "Relationship",
+                                    "name": "isPartOf",
+                                    "target": "dtmi:com:xmpro:WindFarm:WTUR;1",
+                                    "maxMultiplicity": 1
+                                } ] }

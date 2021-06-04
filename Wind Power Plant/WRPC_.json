@@ -1,0 +1,152 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WRPC;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Reactive power control information",
+    "description": "-",
+    "contents": [
+   {
+    "@type": "Telemetry",
+    "name": "OpTurNum",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "VArMod",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Off",
+                "displayName": "No reactive power control",
+                "enumValue": 1
+            },
+            {
+                "name": "VAr",
+                "displayName": "Reactive power control",
+                "enumValue": 2
+              },
+              {
+                "name": "Voc",
+                "displayName": "Voltage control",
+                "enumValue": 3
+              },
+              {
+                "name": "PF",
+                "displayName": "Power  factor control",
+                "enumValue": 4
+              } ] } },
+              {
+                "@type": "Property",
+                "name": "PFSign",
+                "schema": "integer"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "VAr",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "VArCapImpt",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "VArCapExpt",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "VArMinCap",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "PF",
+                "schema": "double"
+              },
+              {
+                "@type": ["Telemetry","Voltage"],
+                "name": "V",
+                "schema": "double",
+                "unit": "volt"
+              },
+              {
+                "@type": "Property",
+                "name": "VArAct",
+                "schema": {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "Off",
+                            "displayName": "No reactive power control",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "VAr",
+                            "displayName": "Reactive power control",
+                            "enumValue": 2
+                          },
+                          {
+                            "name": "Voc",
+                            "displayName": "Voltage control",
+                            "enumValue": 3
+                          },
+                          {
+                            "name": "PF",
+                            "displayName": "Power  factor control",
+                            "enumValue": 4
+                          } ] } },
+              {
+                "@type": "Property",
+                "name": "VArSpt",
+                "schema": "double"
+              },
+              {
+                "@type": "Property",
+                "name": "VArUpGraSpt",
+                "schema": "double"
+              },
+              {
+                "@type": "Property",
+                "name": "VArDnGraSpt",
+                "schema": "double"
+              },
+              {
+                "@type": ["Property","Voltage"],
+                "name": "VSpt",
+                "schema": "double",
+                "unit": "volt"
+              },
+              {
+                "@type": ["Property","Voltage"],
+                "name": "VUpGraSpt",
+                "schema": "double",
+                "unit": "volt"
+              },
+              {
+                "@type": ["Property","Voltage"],
+                "name": "VDnGraSpt",
+                "schema": "double",
+                "unit": "volt"
+              },
+              {
+                "@type": "Property",
+                "name": "DrpStp",
+                "schema": "double"
+              },
+              {
+                "@type": "Property",
+                "name": "PFSpt",
+                "schema": "double"
+              },
+              {"@type": "Relationship",
+                "name": "isPartOf",
+                "target":"dtmi:com:xmpro:WindFarm:WPPD;1",
+                "maxMultiplicity": 1
+            } ] } 

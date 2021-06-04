@@ -1,0 +1,162 @@
+
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WROT;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Wind Turbine Rotor Information",
+    "description": "-",
+    "contents": [
+      {
+          "@type": "Property",
+          "name": "RotSt",
+          "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                  {
+                      "name": "Blk",
+                      "displayName": "Rotor is blocked",
+                      "enumValue": 1
+                  },
+                  {
+                      "name": "Stop",
+                      "displayName": "Rotor is stopped",
+                      "enumValue": 2
+                    },
+                    {
+                        "name": "Idl",
+                        "displayName": "Rotor is in idle",
+                        "enumValue": 3
+                      },
+                      {
+                        "name": "Run",
+                        "displayName": "Rotor is rotating",
+                        "enumValue": 4
+                      } ] } },
+                      {
+                        "@type": "Property",
+                        "name": "BlSt",
+                        "schema": {
+                            "@type": "Enum",
+                            "valueSchema": "integer",
+                            "enumValues": [
+                                {
+                                    "name": "Blk",
+                                    "displayName": "Blade is blocked",
+                                    "enumValue": 1
+                                },
+                                {
+                                    "name": "Stop",
+                                    "displayName": "Blade is stopped",
+                                    "enumValue": 2
+                                  },
+                                  {
+                                      "name": "Pt",
+                                      "displayName": "Blade is pitching",
+                                      "enumValue": 3
+                                    } ] } },
+                                    {
+                                        "@type": "Telemetry",
+                                        "name": "PthCtlSt",
+                                        "schema": {
+                                            "@type": "Enum",
+                                            "valueSchema": "integer",
+                                            "enumValues": [
+                                                {
+                                                    "name": "On",
+                                                    "displayName": "System is operating",
+                                                    "enumValue": 1
+                                                },
+                                                {
+                                                    "name": "Off",
+                                                    "displayName": "System is not operating",
+                                                    "enumValue": 2
+                                                  },
+                                                  {
+                                                      "name": "Flt",
+                                                      "displayName": "System is in faulty condition",
+                                                      "enumValue": 3
+                                                    } ] } },
+                                                      {
+                                                        "@type": ["Telemetry", "AngularVelocity"],
+                                                        "name": "RotSpd",
+                                                        "schema": "double",
+                                                        "unit": "revolutionPerSecond"
+                                                      },
+                                                      {
+                                                        "@type": ["Telemetry", "Angle"],
+                                                        "name": "RotPos",
+                                                        "schema": "double",
+                                                        "unit": "degreeOfArc"
+                                                      },
+                                                      {
+                                                        "@type": ["Telemetry", "Temperature"],
+                                                        "name": "HubTmp",
+                                                        "schema": "double",
+                                                        "unit": "degreeCelsius"
+                                                      },
+                                                      {
+                                                        "@type": ["Telemetry", "Pressure"],
+                                                        "name": "BlPthHyPres",
+                                                        "schema": "double",
+                                                        "unit": "kilopascal"                                                 
+                                                      },
+                                                      {
+                                                        "@type": ["Telemetry", "Angle"],
+                                                        "name": "BlPthAngTgt",
+                                                        "schema": "double",
+                                                        "unit": "degreeOfArc"
+                                                      },
+                                                      {
+                                                        "@type": ["Telemetry", "Angle"],
+                                                        "name": "BlPthANgVal",
+                                                        "schema": "double",
+                                                        "unit": "degreeOfArc"
+                                                      },
+                                                      {
+                                                                      "@type": "Property",
+                                                                      "name": "RotBlk",
+                                                                      "schema": {
+                                                                          "@type": "Enum",
+                                                                          "valueSchema": "integer",
+                                                                          "enumValues": [
+                                                                              {
+                                                                                  "name": "On",
+                                                                                  "displayName": "Set to ON",
+                                                                                  "enumValue": 1
+                                                                              },
+                                                                              {
+                                                                                  "name": "Off",
+                                                                                  "displayName": "Set to OFF",
+                                                                                  "enumValue": 2
+                                                                                },
+                                                                                {
+                                                                                    "name": "Auto",
+                                                                                    "displayName": "Set to AUTOMATIC MODE",
+                                                                                    "enumValue": 3
+                                                                                } ] } },
+                                                                                  {
+                                                                                    "@type": "Property",
+                                                                                    "name": "PthEmgChk",
+                                                                                    "schema": {
+                                                                                        "@type": "Enum",
+                                                                                        "valueSchema": "integer",
+                                                                                        "enumValues": [
+                                                                                            {
+                                                                                                "name": "Str",
+                                                                                                "displayName": "Start",
+                                                                                                "enumValue": 1
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "Stop",
+                                                                                                "displayName": "Stop",
+                                                                                                "enumValue": 2
+                                                                                              } ] } },
+                                                                                              {
+                                                                                                "@type": "Relationship",
+                                                                                                "name": "isPartOf",
+                                                                                                "target": "dtmi:com:xmpro:WindFarm:WTUR;1",
+                                                                                                "maxMultiplicity": 1
+                                                                                            } ] }

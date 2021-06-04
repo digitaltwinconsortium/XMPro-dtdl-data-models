@@ -1,0 +1,175 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WMET;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Meteorological information",
+    "description": "-",
+    "contents": [
+   {
+    "@type": "Property",
+    "name": "IceSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "On",
+                "displayName": "Condition is true",
+                "enumValue": 1
+            },
+            {
+                "name": "Off",
+                "displayName": "Condition is false",
+                "enumValue": 2
+              },
+              {
+                "name": "Flt",
+                "displayName": "Condition is unknown (faulty)",
+                "enumValue": 3
+              } ] } },
+              {
+                "@type": ["Telemetry", "Distance"],
+                "name": "Alt",
+                "schema": "double",
+                "unit": "metre"
+              },
+              {
+                "@type": ["Telemetry", "Temperature"],
+                "name": "EnvTmp",
+                "schema": "double",
+                "unit": "degreeCelsius"
+              },
+              {
+                "@type": ["Telemetry", "Temperature"],
+                "name": "WetBlbTmp",
+                "schema": "double",
+                "unit": "degreeCelsius"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "CloudCvr",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "EnvHum",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "DewPt",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "DffInsol",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "DctInsol",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "DlDur",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "HorInsol",
+                "schema": "double"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "HorWdDir",
+                "schema": "double"
+              },
+              {
+                "@type": ["Telemetry","Velocity"],
+                "name": "HorWdSpd",
+                "schema": "double",
+                "unit" : "metrePerSecond"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "VerWdDir",
+                "schema": "double"
+              },
+              {
+                "@type": ["Telemetry","Velocity"],
+                "name": "VerWdSpd",
+                "schema": "double",
+                "unit" : "metrePerSecond"
+              },
+              {
+                "@type": ["Telemetry","Velocity"],
+                "name": "WdGustSpd",
+                "schema": "double",
+                "unit" : "metrePerSecond"
+              },
+              {
+                "@type": ["Telemetry","Pressure"],
+                "name": "EnvPres",
+                "schema": "double",
+                "unit" : "kilopascal"
+              },
+              {
+                "@type": ["Telemetry","Distance"],
+                "name": "RnFll",
+                "schema": "double",
+                "unit" : "millimetre"
+              },
+              {
+                "@type": ["Telemetry","Density"],
+                "name": "SnwDen",
+                "schema": "double",
+                "unit" : "kilogramPerCubicMetre"
+              },
+              {
+                "@type": ["Telemetry","Temperature"],
+                "name": "SnwTmp",
+                "schema": "double",
+                "unit" : "degreeCelsius"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "SnwCvr",
+                "schema": "double"
+              },
+              {
+                "@type": ["Telemetry","Distance"],
+                "name": "SnwFll",
+                "schema": "double",
+                "unit" : "centimetre"
+              },
+              {
+                "@type": "Telemetry",
+                "name": "SnwEq",
+                "schema": "double"
+              },
+              {
+                "@type": ["Telemetry","Distance"],
+                "name": "Ice",
+                "schema": "double",
+                "unit" : "centimetre"
+              },
+              {
+                "@type": ["Telemetry","Density"],
+                "name": "AirDen",
+                "schema": "double",
+                "unit" : "kilogramPerCubicMetre"
+              },
+              {
+                "@type": ["Telemetry","Temperature"],
+                "name": "WtrTmp",
+                "schema": "double",
+                "unit" : "degreeCelsius"
+              },
+              {"@type": "Relationship",
+                "name": "isPartOf",
+                "target":"dtmi:com:xmpro:WindFarm:WPPD;1",
+                "maxMultiplicity": 1
+            } ] }

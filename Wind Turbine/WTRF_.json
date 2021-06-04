@@ -1,0 +1,193 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WTRF;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Transformer information",
+    "description": "-",
+    "contents": [
+   {
+    "@type": ["Property", "TimeSpan"],
+    "name": "OpTmsRs",
+    "schema": "double",
+    "unit": "second"
+  },
+  {
+    "@type": "Property",
+    "name": "ClSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Cl",
+                "displayName": "System is cooling",
+                "enumValue": 1
+            },
+            {
+                "name": "Stdby",
+                "displayName": "System is in standby mode",
+                "enumValue": 2
+              },
+              {
+                  "name": "Off",
+                  "displayName": "System is off",
+                  "enumValue": 3
+                },
+                {
+                    "name": "Flt",
+                    "displayName": "System is faulty",
+                    "enumValue": 4
+                  } ] } },
+                                  {
+                                    "@type": "Property",
+                                    "name": "OilLevSt",
+                                    "schema": {
+                                        "@type": "Enum",
+                                        "valueSchema": "integer",
+                                        "enumValues": [
+                                            {
+                                                "name": "HiHi",
+                                                "displayName": "Value above high-high level",
+                                                "enumValue": 1
+                                            },
+                                            {
+                                                "name": "Hi",
+                                                "displayName": "Value above high level",
+                                                "enumValue": 2
+                                              },
+                                              {
+                                                  "name": "Nor",
+                                                  "displayName": "Value in normal range",
+                                                  "enumValue": 3
+                                                },
+                                                {
+                                                    "name": "Lo",
+                                                    "displayName": "Value below low level",
+                                                    "enumValue": 4
+                                                  },
+                                                  {
+                                                    "name": "LoLo",
+                                                    "displayName": "Value below low-low level",
+                                                    "enumValue": 5
+                                                  },
+                                                  {
+                                                    "name": "OutRng",
+                                                    "displayName": "Value out of range",
+                                                    "enumValue": 6
+                                                  } ] } },
+                                                  {
+                                                    "@type": "Property",
+                                                    "name": "TnkPresSt",
+                                                    "schema": {
+                                                        "@type": "Enum",
+                                                        "valueSchema": "integer",
+                                                        "enumValues": [
+                                                            {
+                                                                "name": "HiHi",
+                                                                "displayName": "Value above high-high level",
+                                                                "enumValue": 1
+                                                            },
+                                                            {
+                                                                "name": "Hi",
+                                                                "displayName": "Value above high level",
+                                                                "enumValue": 2
+                                                              },
+                                                              {
+                                                                  "name": "Nor",
+                                                                  "displayName": "Value in normal range",
+                                                                  "enumValue": 3
+                                                                },
+                                                                {
+                                                                    "name": "Lo",
+                                                                    "displayName": "Value below low level",
+                                                                    "enumValue": 4
+                                                                  },
+                                                                  {
+                                                                    "name": "LoLo",
+                                                                    "displayName": "Value below low-low level",
+                                                                    "enumValue": 5
+                                                                  },
+                                                                  {
+                                                                    "name": "OutRng",
+                                                                    "displayName": "Value out of range",
+                                                                    "enumValue": 6
+                                                                  } ] } },
+                                                                  {
+                                                                    "@type": ["Telemetry", "Voltage"],
+                                                                    "name": "TurPPV",
+                                                                    "schema": "double",
+                                                                    "unit": "volt"
+                                                                  },
+                                                                  {
+                                                                    "@type": ["Telemetry", "Voltage"],
+                                                                    "name": "TurPNV",
+                                                                    "schema": "double",
+                                                                    "unit": "volt"
+                                                                  },
+                                                                  {
+                                                                    "@type": ["Telemetry", "Current"],
+                                                                    "name": "TurA",
+                                                                    "schema": "double",
+                                                                    "unit": "ampere"
+                                                                  },
+                                                                  {
+                                                                    "@type": ["Telemetry", "Voltage"],
+                                                                    "name": "GriPPV",
+                                                                    "schema": "double",
+                                                                    "unit": "volt"
+                                                                  },
+                                                                  {
+                                                                    "@type": ["Telemetry", "Voltage"],
+                                                                    "name": "GriPNV",
+                                                                    "schema": "double",
+                                                                    "unit": "volt"
+                                                                  },
+                                                                  {
+                                                                    "@type": ["Telemetry", "Current"],
+                                                                    "name": "GriA",
+                                                                    "schema": "double",
+                                                                    "unit": "ampere"
+                                                                  },
+                                                                  {
+                                                                    "@type": ["Telemetry", "Temperature"],
+                                                                    "name": "TurTmp",
+                                                                    "schema": "double",
+                                                                    "unit": "degreeCelsius"
+                                                                  },
+                                                                  {
+                                                                    "@type": ["Telemetry", "Temperature"],
+                                                                    "name": "GriTmp",
+                                                                    "schema": "double",
+                                                                    "unit": "degreeCelsius"
+                                                                  },
+                                                                  {
+                                                                    "@type": "Property",
+                                                                    "name": "GriSwOp",
+                                                                    "schema": {
+                                                                        "@type": "Enum",
+                                                                        "valueSchema": "integer",
+                                                                        "enumValues": [
+                                                                            {
+                                                                                "name": "On",
+                                                                                "displayName": "Set to ON",
+                                                                                "enumValue": 1
+                                                                            },
+                                                                            {
+                                                                                "name": "Hi",
+                                                                                "displayName": "Set to OFF",
+                                                                                "enumValue": 2
+                                                                              },
+                                                                              {
+                                                                                  "name": "Auto",
+                                                                                  "displayName": "Set to AUTOMATIC MODE",
+                                                                                  "enumValue": 3
+                                                                                } ] } },
+                                                                                {
+                                                                                    "@type": "Relationship",
+                                                                                    "name": "isPartOf",
+                                                                                    "target": "dtmi:com:xmpro:WindFarm:WTUR;1",
+                                                                                    "maxMultiplicity": 1
+                                                                                } ] } 
+                                                                  

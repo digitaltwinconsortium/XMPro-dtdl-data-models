@@ -1,0 +1,29 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:LLN0;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Logical Node zero class",
+    "description": "-",
+    "contents": [
+   {
+    "@type": "Property",
+    "name": "LocKey",
+    "schema": "boolean"
+  },
+  {
+    "@type": "Property",
+    "name": "Loc",
+    "schema": "boolean"
+  },
+  {
+    "@type": "Property",
+    "name": "LocSta",
+    "schema": "boolean"
+  },
+  {
+    "@type": "Property",
+    "name": "GrRef",
+    "schema": "string"
+  } ] }

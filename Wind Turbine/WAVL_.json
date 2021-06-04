@@ -1,0 +1,120 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WAVL;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Availability information",
+    "description": "-",
+    "contents": [
+        {
+    "@type": "Property",
+    "name": "Iaogfp",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iaogpp",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iaongts",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iaongen",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iaongrs",
+    "schema": "integer"
+  }, 
+  {
+    "@type": "Property",
+    "name": "Iaongel",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Ianosm",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Ianopca",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Ianofo",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Ianos",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iafm",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iu",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Ia",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iao",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iano",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iaog",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "Iaong",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "AvlTmsRs",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "OpTmsRs",
+    "schema": "integer"
+  },
+  {
+    "@type": "Telemetry",
+    "name": "SysAvl",
+    "schema": "integer"
+  },
+  {
+    "@type": "Telemetry",
+    "name": "TurAvl",
+    "schema": "integer"
+  },
+  {
+    "@type": "Relationship",
+  "name": "isPartOf",
+  "target": "dtmi:com:xmpro:WindFarm:WPPD;1",
+  "maxMultiplicity": 1
+} ] }

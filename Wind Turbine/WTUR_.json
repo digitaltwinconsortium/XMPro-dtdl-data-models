@@ -1,0 +1,153 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WTUR;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Wind Turbine General Information",
+    "description": "-",
+    "contents": [
+   {
+    "@type": "Property",
+    "name": "StrCnt",
+    "schema": "integer"
+  },
+  {
+    "@type": "Property",
+    "name": "StopCnt",
+    "schema": "integer"
+  },
+  {
+    "@type": ["Telemetry", "Power"],
+    "name": "TotWh",
+    "schema": "double",
+    "unit": "megawatt"
+  },
+  {
+    "@type": "Telemetry",
+    "name": "TotVArh",
+    "schema": "double"
+  },
+  {
+    "@type": ["Telemetry", "Power"],
+    "name": "DmdWh",
+    "schema": "double",
+    "unit": "megawatt"
+  },
+  {
+    "@type": "Telemetry",
+    "name": "DmdVArh",
+    "schema": "double"
+  },
+  {
+    "@type": ["Telemetry", "Power"],
+    "name": "SupWh",
+    "schema": "double",
+    "unit" : "megawatt"
+  },
+  {
+    "@type": "Telemetry",
+    "name": "SupVArh",
+    "schema": "double"
+  },
+  {
+    "@type": "Property",
+    "name": "TurSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Stop",
+                "displayName": "Turbine stopped",
+                "enumValue": 1
+            },
+            {
+                "name": "Stdby",
+                "displayName": "Turbine is in standby",
+                "enumValue": 2
+              },
+              {
+                "name": "Str",
+                "displayName": "Turbine is starting",
+                "enumValue": 3
+              },
+              {
+                "name": "Run",
+                "displayName": "Turbine is running in normal operation",
+                "enumValue": 4
+              },
+              {
+                "name": "Free",
+                "displayName": "Turbine is in freerun with the generator deisconnected",
+                "enumValue": 5
+              },
+              {
+                "name": "Brk",
+                "displayName": "Turbine is braking",
+                "enumValue": 6
+              } ] } },
+         
+                        {
+                            "@type": ["Telemetry", "Power"],
+                            "name": "W",
+                            "schema": "double",
+                            "unit" : "megawatt"
+                          },
+                          {
+                            "@type": "Telemetry",
+                            "name": "VAr",
+                            "schema": "double"
+                          },
+                          {
+                            "@type": "Property",
+                            "name": "TurOp",
+                            "schema": {
+                                "@type": "Enum",
+                                "valueSchema": "integer",
+                                "enumValues": [
+                                    {
+                                        "name": "Str",
+                                        "displayName": "Start",
+                                        "enumValue": 1
+                                    },
+                                    {
+                                        "name": "Stop",
+                                        "displayName": "Stop",
+                                        "enumValue": 2
+                                    } ] } },
+                          {
+                            "@type": "Property",
+                            "name": "VArOvW",
+                            "schema": "double"
+                          },
+                          {
+                            "@type": ["Property","Voltage"],
+                            "name": "DmdVSpt",
+                            "schema": "double",
+                            "unit": "volt"
+                          },
+                          {
+                            "@type": ["Property","Power"],
+                            "name": "DmdWSpt",
+                            "schema": "double",
+                            "unit":"megawatt"
+                          },
+                          {
+                            "@type": "Property",
+                            "name": "DmdVArSpt",
+                            "schema": "double"
+                          },
+                          {
+                            "@type": "Property",
+                            "name": "DmdPFSpt",
+                            "schema": "double"
+                          },
+                   
+          {"@type": "Relationship",
+            "name": "isPartOf",
+            "target": "dtmi:com:xmpro:WindFarm:WTUR;1",
+            "maxMultiplicity": 1
+        } ] } 
+                   
+                   

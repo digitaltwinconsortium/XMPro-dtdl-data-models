@@ -1,0 +1,45 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WALG;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Analogue log information",
+    "description": "-",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "TurAnLog",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "TurPhsLog",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "HiAcsSpt",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "LoAcsSpt",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "TrgEmgStop",
+            "schema": "integer"
+          },
+          {
+            "@type": "Property",
+            "name": "TrgProdGri",
+            "schema": "integer"
+          },
+          {
+              "@type": "Relationship",
+            "name": "isPartOf",
+            "target": "dtmi:com:xmpro:WindFarm:WPPD;1",
+            "maxMultiplicity": 1
+        } ] }

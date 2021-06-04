@@ -1,0 +1,98 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WTOW;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Tower information",
+    "description": "-",
+    "contents": [
+   {
+    "@type": "Property",
+    "name": "LftSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Op",
+                "displayName": "Lift in operation",
+                "enumValue": 1
+            },
+            {
+                "name": "Run",
+                "displayName": "Lift running",
+                "enumValue": 2
+              },
+              {
+                  "name": "Rdy",
+                  "displayName": "Lift ready",
+                  "enumValue": 3
+                },
+                {
+                    "name": "Flt",
+                    "displayName": "Lift is faulty condition",
+                    "enumValue": 4
+                  } ] } },
+                  {
+                    "@type": "Property",
+                    "name": "DehumSt",
+                    "schema": {
+                        "@type": "Enum",
+                        "valueSchema": "integer",
+                        "enumValues": [
+                            {
+                                "name": "On",
+                                "displayName": "System is operating",
+                                "enumValue": 1
+                            },
+                            {
+                                "name": "Off",
+                                "displayName": "System is not operating",
+                                "enumValue": 2
+                              },
+                              {
+                                  "name": "Flt",
+                                  "displayName": "System is in faulty condition",
+                                  "enumValue": 3
+                                } ] } },
+                                {
+                                    "@type": "Property",
+                                    "name": "HtexSt",
+                                    "schema": {
+                                        "@type": "Enum",
+                                        "valueSchema": "integer",
+                                        "enumValues": [
+                                            {
+                                                "name": "On",
+                                                "displayName": "System is operating",
+                                                "enumValue": 1
+                                            },
+                                            {
+                                                "name": "Off",
+                                                "displayName": "System is not operating",
+                                                "enumValue": 2
+                                              },
+                                              {
+                                                  "name": "Flt",
+                                                  "displayName": "System is in faulty condition",
+                                                  "enumValue": 3
+                                                } ] } },
+                                                {
+                                                    "@type": "Telemetry",
+                                                    "name": "LftPos",
+                                                    "schema": "integer"
+                                                  },
+                                                  {
+                                                    "@type": "Telemetry",
+                                                    "name": "IntnHum",
+                                                    "schema": "double"
+                                                  },
+                                                  {"@type": "Relationship",
+                                                    "name": "isPartOf",
+                                                    "target": "dtmi:com:xmpro:WindFarm:WTUR;1",
+                                                    "maxMultiplicity": 1
+                                                } ] } 
+                               
+                                
+                  

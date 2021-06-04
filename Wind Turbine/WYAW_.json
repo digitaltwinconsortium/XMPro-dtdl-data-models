@@ -1,0 +1,143 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WYAW;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Yawing information",
+    "description": "-",
+    "contents": [
+   {
+    "@type": ["Property", "TimeSpan"],
+    "name": "CwOpTms",
+    "schema": "double",
+    "unit": "second"
+  },
+  {
+    "@type": ["Property", "TimeSpan"],
+    "name": "CcwOpTms",
+    "schema": "double",
+    "unit": "second"
+  },
+{
+    "@type": "Property",
+    "name": "YwSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Auto",
+                "displayName": "Yaw in Auto operation mode",
+                "enumValue": 1
+            },
+            {
+                "name": "Cw",
+                "displayName": "Yaw in clock wise operation mode",
+                "enumValue": 2
+              },
+              {
+                  "name": "Blk",
+                  "displayName": "Yaw blocked",
+                  "enumValue": 3
+                },
+                {
+                    "name": "Ccw",
+                    "displayName": "Yaw in counter clock wise operation mode",
+                    "enumValue": 4
+                  },
+                  {
+                    "name": "Flt",
+                    "displayName": "Yaw in faulty",
+                    "enumValue": 5
+                  } ] } },
+                  {
+                    "@type": "Property",
+                    "name": "BrkSt",
+                    "schema": {
+                        "@type": "Enum",
+                        "valueSchema": "integer",
+                        "enumValues": [
+                            {
+                                "name": "On",
+                                "displayName": "System is operating",
+                                "enumValue": 1
+                            },
+                            {
+                                "name": "Off",
+                                "displayName": "System is not operating",
+                                "enumValue": 2
+                              },
+                              {
+                                  "name": "Flt",
+                                  "displayName": "System is in faulty condition",
+                                  "enumValue": 3
+                                } ] } },
+                  {
+                    "@type": ["Telemetry", "AngularVelocity"],
+                    "name": "RotSpd",
+                    "schema": "double",
+                    "unit": "revolutionPerSecond"
+                  },
+                  {
+                    "@type": ["Telemetry", "Temperature"],
+                    "name": "Tmp",
+                    "schema": "double",
+                    "unit": "degreeCelsius"
+                  },
+                  {
+                    "@type": ["Telemetry", "Angle"],
+                    "name": "YwAng",
+                    "schema": "double",
+                    "unit": "degreeOfArc"
+                  },
+                  {
+                    "@type": "Telemetry",
+                    "name": "CabWup",
+                    "schema": "double"
+                  },
+                  {
+                    "@type": "Telemetry",
+                    "name": "SysGsLev",
+                    "schema": "double"
+                  },
+                  {
+                    "@type": ["Telemetry", "Pressure"],
+                    "name": "BrkPres",
+                    "schema": "double",
+                    "unit": "kilopascal"
+                  },
+                  {
+                    "@type": "Property",
+                    "name": "YwOp",
+                    "schema": {
+                        "@type": "Enum",
+                        "valueSchema": "integer",
+                        "enumValues": [
+                            {
+                                "name": "Cw",
+                                "displayName": "Set to CLOCKWISE",
+                                "enumValue": 1
+                            },
+                            {
+                                "name": "Off",
+                                "displayName": "Set to OFF",
+                                "enumValue": 2
+                              },
+                              {
+                                  "name": "Ccw",
+                                  "displayName": "Set to COUNTER CLOCKWISE",
+                                  "enumValue": 3
+                                },
+                                {
+                                    "name": "Auto",
+                                    "displayName": "Set to AUTOMATIC MODE",
+                                    "enumValue": 4
+                                  } ] } },
+                  {
+                      "@type": "Relationship",
+                    "name": "isPartOf",
+                    "target": "dtmi:com:xmpro:WindFarm:WTUR;1",
+                    "maxMultiplicity": 1
+                } ] }
+                 

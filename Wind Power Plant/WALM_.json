@@ -1,0 +1,49 @@
+  {
+    "@id": "dtmi:com:xmpro:WindFarm:WALM;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Alarm Information",
+    "description": "-",
+    "contents": [
+        {
+    "@type": "Property",
+    "name": "AlmSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "On",
+                "displayName": "Alarm is on",
+                "enumValue": 1
+            },
+            {
+                "name": "Off",
+                "displayName": "Alarm is off",
+                "enumValue": 2
+              } ] } },
+               {
+                "@type": "Property",
+                "name": "alarmname",
+                "schema": {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "On",
+                            "displayName": "Alarm is on",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "Off",
+                            "displayName": "Alarm is off",
+                            "enumValue": 2
+                          } ] } },
+                          {"@type": "Relationship",
+                            "name": "isPartOf",
+                            "target": "dtmi:com:xmpro:WindFarm:WPPD;1",
+                            "maxMultiplicity": 1
+                        } ] }
+         

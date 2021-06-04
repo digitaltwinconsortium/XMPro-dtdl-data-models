@@ -1,0 +1,185 @@
+{
+    "@id": "dtmi:com:xmpro:WindFarm:WNAC;1",
+    "@type": "Interface",
+    "@context": [
+      "dtmi:dtdl:context;2"
+    ],
+    "displayName": "Nacelle information",
+    "description": "-",
+    "contents": [
+   {
+    "@type": ["Property", "TimeSpan"],
+    "name": "OpTmsRs",
+    "schema": "double",
+    "unit": "second"
+  },
+  {
+    "@type": "Property",
+    "name": "BecBlbSt",
+    "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+            {
+                "name": "Auto",
+                "displayName": "Beacon in Auto mode",
+                "enumValue": 1
+            },
+            {
+                "name": "Bulb1",
+                "displayName": "Becon at bulb1",
+                "enumValue": 2
+              },
+              {
+                  "name": "Bulb2",
+                  "displayName": "Beacon at bulb2",
+                  "enumValue": 3
+                },
+                {
+                    "name": "Off",
+                    "displayName": "Beacon is Off",
+                    "enumValue": 4
+                  },
+                  {
+                    "name": "Flt",
+                    "displayName": "Beacon is faulty",
+                    "enumValue": 5
+                  } ] } },
+                  {
+                    "@type": "Property",
+                    "name": "WdHtSt",
+                    "schema": {
+                        "@type": "Enum",
+                        "valueSchema": "integer",
+                        "enumValues": [
+                            {
+                                "name": "On",
+                                "displayName": "Heater is operating",
+                                "enumValue": 1
+                            },
+                            {
+                                "name": "Off",
+                                "displayName": "Heater is not operating",
+                                "enumValue": 2
+                              },
+                              {
+                                  "name": "Dis",
+                                  "displayName": "Heater is disabled",
+                                  "enumValue": 3
+                                } ] } },
+                                {
+                                    "@type": "Property",
+                                    "name": "AneSt",
+                                    "schema": {
+                                        "@type": "Enum",
+                                        "valueSchema": "integer",
+                                        "enumValues": [
+                                            {
+                                                "name": "Auto",
+                                                "displayName": "Anemometers in Auto mode",
+                                                "enumValue": 1
+                                            },
+                                            {
+                                                "name": "Ane1",
+                                                "displayName": "Primary anemometer in operation",
+                                                "enumValue": 2
+                                              },
+                                              {
+                                                  "name": "Ane2",
+                                                  "displayName": "Secondary anemometer in operation",
+                                                  "enumValue": 3
+                                                },
+                                                {
+                                                    "name": "Off",
+                                                    "displayName": "Anemometers in off",
+                                                    "enumValue": 4
+                                                  },
+                                                  {
+                                                    "name": "Flt",
+                                                    "displayName": "Anemometers faulty",
+                                                    "enumValue": 5
+                                                  } ] } },
+                                                  {
+                                                    "@type": "Telemetry",
+                                                    "name": "Dir",
+                                                    "schema": "double"
+                                                  },
+                                                  {
+                                                    "@type": ["Telemetry", "Temperature"],
+                                                    "name": "IntnTmp",
+                                                    "schema": "double",
+                                                    "unit": "degreeCelsius"
+                                                  },
+                                                  {
+                                                    "@type": "Telemetry",
+                                                    "name": "IntnHum",
+                                                    "schema": "double"
+                                                  },
+                                                  {
+                                                    "@type": ["Telemetry","LuminousIntensity"],
+                                                    "name": "BecLumLev",
+                                                    "schema": "double",
+                                                    "unit":"candela"
+                                                  },
+                                                  {
+                                                    "@type": ["Telemetry", "Distance"],
+                                                    "name": "Vis",
+                                                    "schema": "double",
+                                                    "unit": "kilometre"
+                                                  },
+                                                  {
+                                                    "@type": ["Telemetry", "Angle"],
+                                                    "name": "XdirDsp",
+                                                    "schema": "double",
+                                                    "unit": "degreeOfArc"
+                                                  },
+                                                  {
+                                                    "@type": ["Telemetry", "Angle"],
+                                                    "name": "YdirDsp",
+                                                    "schema": "double",
+                                                    "unit": "degreeOfArc"
+                                                  },
+                                                                   {
+                                                                    "@type": "Property",
+                                                                    "name": "BecMod",
+                                                                    "schema": {
+                                                                        "@type": "Enum",
+                                                                        "valueSchema": "integer",
+                                                                        "enumValues": [
+                                                                            {
+                                                                                "name": "Auto",
+                                                                                "displayName": "Set to AUTOMAIC MODE",
+                                                                                "enumValue": 1
+                                                                            },
+                                                                            {
+                                                                                "name": "Bulb1",
+                                                                                "displayName": "Set bulb 1 to ON",
+                                                                                "enumValue": 2
+                                                                              },
+                                                                              {
+                                                                                  "name": "Bulb2",
+                                                                                  "displayName": "Set bulb 2 to ON",
+                                                                                  "enumValue": 3
+                                                                              } ] } },
+                                                                                {
+                                                                                    "@type": "Property",
+                                                                                    "name": "BecLevSpt",
+                                                                                    "schema": "double"
+                                                                                  },
+                                                                                  {
+                                                                                    "@type": "Property",
+                                                                                    "name": "FlshSpt",
+                                                                                    "schema": "double"
+                                                                                  },
+                                                                                  {
+                                                                                      "@type": "Relationship",
+                                                                                    "name": "isPartOf",
+                                                                                    "target": "dtmi:com:xmpro:WindFarm:WTUR;1",
+                                                                                    "maxMultiplicity": 1
+                                                                                  } ] } 
+                                                                                
+                                                                                
+                                                  
+                               
+                               
+                               
