@@ -54,9 +54,9 @@ This repository includes DTDL models for wind farms and wind turbines based on t
 
 | File        | Description                                       |
 | ----------  | ------------------------------------------------- |
-| WALG.json  | Wind turbine analogue log information             |
-| WSLG.json  | Wind turbine state log information                |
-| WREP.json  | Wind turbine report information                   |
+| [WALG.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Not%20Supported/WALG.json)  | Wind turbine analogue log information             |
+| [WSLG.json] (https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Not%20Supported/WSLG.json) | Wind turbine state log information                |
+| [WREP.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Not%20Supported/WREP.json)  | Wind turbine report information                   |
 
 *These files are currently not supported in Azure Digital Twin, but can be used in Time Series Insights and XMPro.
 
