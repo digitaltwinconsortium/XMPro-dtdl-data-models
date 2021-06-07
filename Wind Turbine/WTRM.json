@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:com:xmpro:WindFarm:WTUR;1",
+    "@id": "dtmi:com:xmpro:WindFarm:WTRM;1",
     "@type": "Interface",
     "@context": [
       "dtmi:dtdl:context;2"
