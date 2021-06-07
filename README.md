@@ -20,7 +20,7 @@ This repository includes DTDL models for wind farms and wind turbines based on t
 | File        | Description                                       |
 | ----------- | ------------------------------------------------- |
 | [LLN0.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Common%20Information/LLN0.json)  | Logical Node Zero                                 |
-| LPHD.json  | Physical Device Information                       |
+| [LPHD.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Common%20Information/LPHD.json)  | Physical Device Information                       |
 
 
 ### Wind Power Plant
