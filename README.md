@@ -27,18 +27,18 @@ This repository includes DTDL models for wind farms and wind turbines based on t
 
 | File        | Description                                       |
 | ----------- | ------------------------------------------------- |
-| WPPD.json  | Wind power plant general information              |
+| [WPPD.json)](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Wind%20Power%20Plant/WPPD.json)  | Wind power plant general information              |
 | [WALM.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Wind%20Power%20Plant/WALM.json) | Wind power plant alarm information                |
 | [WAPC.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Wind%20Power%20Plant/WAPC.json) | Wind power plant active power control information |                                        
-| WMET.json  | Wind power plant meteorological information       |
-| WRPC.json  | Wind power plant reactive power control           |
+| [WMET.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Wind%20Power%20Plant/WMET.json)  | Wind power plant meteorological information       |
+| [WRPC.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Wind%20Power%20Plant/WRPC.json)  | Wind power plant reactive power control           |
 
 
 ### Wind Turbine
 
 | File        | Description                                       |
 | ----------  | ------------------------------------------------- |
-| WTUR.json  | Wind turbine general information                  |
+| [WTUR.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Wind%20Turbine/WTUR.json)  | Wind turbine general information                  |
 | WCNV.json  | Wind turbine converter information                |
 | WGEN1.json | Wind turbine 1 generator information              |
 | WGEN2.json | Wind turbine 2 generator information              |
@@ -48,7 +48,7 @@ This repository includes DTDL models for wind farms and wind turbines based on t
 | WTRM.json  | Wind turbine transmission information             |
 | WYAW.json  | Wind turbine yawing information                   |
 | WNAC.json  | Wind turbine nacelle information                  |
-| WAVL.json  | Wind turbine availability information             |
+| [WAVL.json](https://github.com/digitaltwinconsortium/XMPro-dtdl-data-models/blob/main/Wind%20Turbine/WAVL.json)  | Wind turbine availability information             |
 
 ### Not Supported*
 
