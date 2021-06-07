@@ -19,44 +19,44 @@ This repository includes DTDL models for wind farms and wind turbines based on t
 
 | File        | Description                                       |
 | ----------- | ------------------------------------------------- |
-| LLN0_.json  | Logical Node Zero                                 |
-| LPHD_.json  | Physical Device Information                       |
+| LLN0.json  | Logical Node Zero                                 |
+| LPHD.json  | Physical Device Information                       |
 
 
 ### Wind Power Plant
 
 | File        | Description                                       |
 | ----------- | ------------------------------------------------- |
-| WPPD_.json  | Wind power plant general information              |
-| WALM_.json  | Wind power plant alarm information                |
-| WAPC_.json  | Wind power plant active power control information |                                                
-| WMET_.json  | Wind power plant meteorological information       |
-| WRPC_.json  | Wind power plant reactive power control           |
+| WPPD.json  | Wind power plant general information              |
+| WALM.json  | Wind power plant alarm information                |
+| WAPC.json  | Wind power plant active power control information |                                                
+| WMET.json  | Wind power plant meteorological information       |
+| WRPC.json  | Wind power plant reactive power control           |
 
 
 ### Wind Turbine
 
 | File        | Description                                       |
 | ----------  | ------------------------------------------------- |
-| WTUR_.json  | Wind turbine general information                  |
-| WCNV_.json  | Wind turbine converter information                |
-| WGEN1_.json | Wind turbine 1 generator information              |
-| WGEN2_.json | Wind turbine 2 generator information              |
-| WROT_.json  | Wind turbine rotor information                    |
-| WTOW_.json  | Wind turbine tower information                    |
-| WTRF_.json  | Wind turbine transformer information              |
-| WTRM_.json  | Wind turbine transmission information             |
-| WYAW_.json  | Wind turbine yawing information                   |
-| WNAC_.json  | Wind turbine nacelle information                  |
-| WAVL_.json  | Wind turbine availability information             |
+| WTUR.json  | Wind turbine general information                  |
+| WCNV.json  | Wind turbine converter information                |
+| WGEN1.json | Wind turbine 1 generator information              |
+| WGEN2.json | Wind turbine 2 generator information              |
+| WROT.json  | Wind turbine rotor information                    |
+| WTOW.json  | Wind turbine tower information                    |
+| WTRF.json  | Wind turbine transformer information              |
+| WTRM.json  | Wind turbine transmission information             |
+| WYAW.json  | Wind turbine yawing information                   |
+| WNAC.json  | Wind turbine nacelle information                  |
+| WAVL.json  | Wind turbine availability information             |
 
 ### Not Supported*
 
 | File        | Description                                       |
 | ----------  | ------------------------------------------------- |
-| WALG_.json  | Wind turbine analogue log information             |
-| WSLG_.json  | Wind turbine state log information                |
-| WREP_.json  | Wind turbine report information                   |
+| WALG.json  | Wind turbine analogue log information             |
+| WSLG.json  | Wind turbine state log information                |
+| WREP.json  | Wind turbine report information                   |
 
 *These files are currently not supported in Azure Digital Twin, but can be used in Time Series Insights and XMPro.
 
